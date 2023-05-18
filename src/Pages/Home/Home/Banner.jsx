@@ -1,4 +1,4 @@
-import logo from '../../../assets/playchild.jpg'
+import logo from '../../../assets/bannerdoll.jpg'
 
 const Banner = () => {
     return (

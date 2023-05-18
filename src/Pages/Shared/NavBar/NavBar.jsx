@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from '../../../assets/logo.webp'
+import logo from '../../../assets/logo.jpg'
 
 const NavBar = () => {
 
@@ -14,7 +14,7 @@ const NavBar = () => {
     </>
     return (
         <div>
-            <div className="navbar bg-base-100">
+            <div className="navbar  h-40 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-400">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -24,7 +24,7 @@ const NavBar = () => {
                             {navitem}
                         </ul>
                     </div>
-                    <img className='h-32 w-32' src={logo} alt="" />
+                    <img className='h-20 w-20 rounded-full' src={logo} alt="" />
                     <span className="btn btn-ghost normal-case text-xl">daisyUI</span>
                 </div>
                 <div className="navbar-center hidden lg:flex">
@@ -33,7 +33,7 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to='/login' className="btn">Login</Link>
+                    <Link to='/login'><button className="btn btn-primary">Login</button></Link>
                     
                 </div>
             </div>
