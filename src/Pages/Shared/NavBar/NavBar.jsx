@@ -8,7 +8,7 @@ const NavBar = () => {
         <li><a>My Toys</a></li>
         <li><a>Add A Toy</a></li>
         <li><a>Blogs</a></li>
-        
+
     </>
     return (
         <div>
