@@ -6,10 +6,10 @@ const NavBar = () => {
     const navitem = <>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/alltoys'>All Toys</Link></li>
-        <li><a>All Toys</a></li>
         <li><a>My Toys</a></li>
-        <li><a>Add A Toy</a></li>
-        <li><a>Blogs</a></li>
+        
+        <li><Link to='/addtoy'>Add A Toy</Link></li>
+        <li><Link to='/blog'>Blogs</Link></li>
 
     </>
     return (
