@@ -1,9 +1,11 @@
+import { Link } from 'react-router-dom';
 import logo from '../../../assets/logo.webp'
 
 const NavBar = () => {
 
     const navitem = <>
-        <li><a>Home</a></li>
+        <li><Link to='/'>Home</Link></li>
+        <li><Link to='/alltoys'>All Toys</Link></li>
         <li><a>All Toys</a></li>
         <li><a>My Toys</a></li>
         <li><a>Add A Toy</a></li>
@@ -31,7 +33,8 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Login</a>
+                    <Link to='/login' className="btn">Login</Link>
+                    
                 </div>
             </div>
         </div>
