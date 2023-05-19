@@ -18,10 +18,10 @@ const AllToy = () => {
         {/* head */}
         <thead>
           <tr>
-            <th>Image</th>
-            <th>Name</th>
-            <th>Job</th>
-            <th>Favorite Color</th>
+            <th>Image & Toy Name</th>
+            <th>Sub-category</th>
+            <th>Price & Available Quantity</th>
+            <th>View Details button</th>
 
           </tr>
         </thead>

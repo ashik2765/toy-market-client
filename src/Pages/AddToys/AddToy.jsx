@@ -13,6 +13,7 @@ const AddToy = () => {
         const Pratings = form.rating.value;
         const PQuantity = form.quantity.value;
         const Pdescription = form.description.value;
+        const category = form.subCategory.value;
         
         const Details ={
             PName,
@@ -22,11 +23,12 @@ const AddToy = () => {
             Pprice,
             Pratings,
             PQuantity,
-            Pdescription
+            Pdescription,
+            category
         }
         console.log(Details)
 
-        fetch("http://localhost:5000/postToy",{
+        fetch("https://toy-shop-server-ashik2765.vercel.app/postToy",{
             method:"POST",
             headers:{
                 'content-type':'application/json'

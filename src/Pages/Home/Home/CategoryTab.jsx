@@ -6,6 +6,8 @@ import IMG3 from '../../../assets/doll-3.jpg'
 
 
 const CategoryTab = () => {
+
+    
     return (
         <div>
             <h2 className='text-4xl text-purple-600 font-bold text-center py-20'>Categories</h2>
