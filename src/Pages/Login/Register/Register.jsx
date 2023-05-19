@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
 import login from '../../../assets/login.jpg'
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AuthContext } from "../../../Provider/AuthProvider";
 
 
 const Register = () => {
-    const [error,setError] = useState('')
+    const [error, setError] = useState('')
+
+    const { createUser } = useContext(AuthContext);
 
 
     const handleRegister = (event) => {
@@ -20,7 +23,16 @@ const Register = () => {
         //     setError('Password must be latter and 0-9')
         //     return
         // }
-        
+
+        createUser(email, password)
+            .then(result => {
+                const user = result.user;
+                console.log(user)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+
     }
     return (
         <div className="hero min-h-screen bg-base-200">

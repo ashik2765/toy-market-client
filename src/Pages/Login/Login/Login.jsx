@@ -1,14 +1,31 @@
 import { Link } from "react-router-dom";
 import logo from '../../../assets/bannerdoll.jpg'
+import { useContext } from "react";
+import { AuthContext } from "../../../Provider/AuthProvider";
+
 
 
 const Login = () => {
-    const handleLogin =(event)=>{
+
+    
+    const {signIn} = useContext(AuthContext);
+
+    const handleLogin = (event) => {
         event.preventDefault();
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email,password)
+        console.log(email, password)
+
+
+        signIn(email, password)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+            })
+            .catch(error => {
+                console.log(error)
+            })
 
     }
     return (
@@ -21,22 +38,22 @@ const Login = () => {
                     <div className="card-body">
                         <h1 className="text-5xl font-bold">Login now!</h1>
                         <form onSubmit={handleLogin}>
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Email</span>
-                            </label>
-                            <input type="text" placeholder="email" name="email" className="input input-bordered" />
-                        </div>
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Password</span>
-                            </label>
-                            <input type="text" placeholder="password" name="password" className="input input-bordered" />
-                            
-                        </div>
-                        <div className="form-control mt-6">
-                            <button className="btn btn-primary">Login</button>
-                        </div>
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Email</span>
+                                </label>
+                                <input type="text" placeholder="email" name="email" className="input input-bordered" />
+                            </div>
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Password</span>
+                                </label>
+                                <input type="text" placeholder="password" name="password" className="input input-bordered" />
+
+                            </div>
+                            <div className="form-control mt-6">
+                                <button className="btn btn-primary">Login</button>
+                            </div>
                         </form>
                         <p>Do Not Have An Account? <Link className="text-blue-600" to="/register">Register</Link></p>
                     </div>
