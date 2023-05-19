@@ -26,6 +26,18 @@ const AddToy = () => {
         }
         console.log(Details)
 
+        fetch("http://localhost:5000/postToy",{
+            method:"POST",
+            headers:{
+                'content-type':'application/json'
+            },
+            body:JSON.stringify(Details)
+        })
+        .then(res => res.json())
+        .then(result =>{
+            console.log(result)
+        })
+
     }
     return (
         <div className="max-w-lg mx-auto py-8">
