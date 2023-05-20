@@ -6,6 +6,7 @@ import Register from "../Pages/Login/Register/Register";
 import AllToy from "../Pages/AllToy/AllToy";
 import Blogs from "../Pages/Blog/Blogs";
 import AddToy from "../Pages/AddToys/AddToy";
+import ViewDetails from "../Pages/ViewDetails/ViewDetails";
 
 
 const router = createBrowserRouter([
@@ -36,6 +37,11 @@ const router = createBrowserRouter([
         {
           path:'addtoy',
           element:<AddToy></AddToy>
+        },
+        {
+          path:'/details/:id',
+          element:<ViewDetails></ViewDetails>,
+          loader:({params})=>fetch(`https://toy-shop-server.vercel.app/toys/${params.id}`)
         }
       ]
     },

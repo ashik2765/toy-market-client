@@ -27,7 +27,7 @@ const CategoryTab = () => {
                         <h2 className="card-title">Shoes!</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                         <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Buy Now</button>
+                            <button className="btn btn-primary">View Details</button>
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@ const CategoryTab = () => {
                         <h2 className="card-title">Shoes!</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                         <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Buy Now</button>
+                            <button className="btn btn-primary">View Details</button>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@ const CategoryTab = () => {
                         <h2 className="card-title">Shoes!</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                         <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Buy Now</button>
+                            <button className="btn btn-primary">View Details</button>
                         </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@ const CategoryTab = () => {
                         <h2 className="card-title">Shoes!</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                         <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Buy Now</button>
+                            <button className="btn btn-primary">View Details</button>
                         </div>
                     </div>
                 </div>
@@ -71,7 +71,7 @@ const CategoryTab = () => {
                         <h2 className="card-title">Shoes!</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                         <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Buy Now</button>
+                            <button className="btn btn-primary">View Details</button>
                         </div>
                     </div>
                 </div>
@@ -81,7 +81,7 @@ const CategoryTab = () => {
                         <h2 className="card-title">Shoes!</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                         <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Buy Now</button>
+                            <button className="btn btn-primary">View Details</button>
                         </div>
                     </div>
                 </div>
@@ -95,7 +95,7 @@ const CategoryTab = () => {
                         <h2 className="card-title">Shoes!</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                         <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Buy Now</button>
+                            <button className="btn btn-primary">View Details</button>
                         </div>
                     </div>
                 </div>
@@ -105,7 +105,7 @@ const CategoryTab = () => {
                         <h2 className="card-title">Shoes!</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                         <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Buy Now</button>
+                            <button className="btn btn-primary">View Details</button>
                         </div>
                     </div>
                 </div>
@@ -115,7 +115,7 @@ const CategoryTab = () => {
                         <h2 className="card-title">Shoes!</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                         <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Buy Now</button>
+                            <button className="btn btn-primary">View Details</button>
                         </div>
                     </div>
                 </div>

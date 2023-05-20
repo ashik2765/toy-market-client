@@ -55,7 +55,7 @@ const NavBar = () => {
                 {user ?
                     <div className="navbar-end">
                         <div className="tooltip tooltip-left"  data-tip={user.email}>
-                            <img className='h-20 w-20 rounded-full me-2' src={logo} alt="" />
+                            <img className='h-16 w-16 rounded-full me-4' src={logo} alt="" />
                         </div>
                         
                         <Link onClick={handleLogOut} to='/login'><button className="btn btn-primary">logout</button></Link>

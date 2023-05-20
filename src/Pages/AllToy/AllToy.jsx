@@ -21,7 +21,7 @@ const AllToy = () => {
             <th>Image & Toy Name</th>
             <th>Sub-category</th>
             <th>Price & Available Quantity</th>
-            <th>View Details button</th>
+            <th>View Details</th>
 
           </tr>
         </thead>

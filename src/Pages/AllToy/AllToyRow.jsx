@@ -1,9 +1,13 @@
+import { Link } from "react-router-dom";
 
 
 const AllToyRow = ({toy}) => {
     console.log(toy)
+    const handleDetails =()=>{
+      console.log('connected')
+    }
 
-    const {PName,Pphoto,SellerName,SellerEmail,Pprice,Pdescription}=toy;
+    const {_id,PName,Pphoto,SellerName,SellerEmail,Pprice,Pdescription}=toy;
     return (
         <tr>
             <td>
@@ -26,7 +30,7 @@ const AllToyRow = ({toy}) => {
             </td>
             <td>{Pdescription}</td>
             <th>
-              <button className="btn btn-ghost btn-xs">details</button>
+              <Link to={`/details/${_id}`}><button onClick={handleDetails} className="btn btn-active btn-ghost ">details</button></Link>
             </th>
           </tr>
     );
