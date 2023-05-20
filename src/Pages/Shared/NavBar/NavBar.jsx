@@ -46,7 +46,7 @@ const NavBar = () => {
                     <ul className="menu menu-horizontal px-1">
                         <li><Link to='/'>Home</Link></li>
                         <li><Link to='/alltoys'>All Toys</Link></li>
-                        {user ? <li><a>My Toys</a></li> : ''}
+                        {user ? <li><Link to='/mytoy'>My Toys</Link></li> : ''}
 
                         {user ? <li><Link to='/addtoy'>Add A Toy</Link></li> : ''}
                         <li><Link to='/blog'>Blogs</Link></li>
@@ -54,10 +54,10 @@ const NavBar = () => {
                 </div>
                 {user ?
                     <div className="navbar-end">
-                        <div className="tooltip tooltip-left"  data-tip={user.email}>
+                        <div className="tooltip tooltip-left" data-tip={user.email}>
                             <img className='h-16 w-16 rounded-full me-4' src={logo} alt="" />
                         </div>
-                        
+
                         <Link onClick={handleLogOut} to='/login'><button className="btn btn-primary">logout</button></Link>
 
                     </div>
