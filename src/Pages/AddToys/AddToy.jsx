@@ -5,25 +5,25 @@ const AddToy = () => {
         event.preventDefault()
 
         const form = event.target;
-        const PName = form.name.value;
-        const Pphoto = form.picture.value;
-        const SellerName = form.sellerName.value;
+        const Product_name = form.name.value;
+        const Product_picture = form.picture.value;
+        const Seller = form.sellerName.value;
         const SellerEmail = form.sellerEmail.value;
-        const Pprice = form.price.value;
-        const Pratings = form.rating.value;
-        const PQuantity = form.quantity.value;
-        const Pdescription = form.description.value;
+        const Product_price = form.price.value;
+        const ratings = form.rating.value;
+        const Product_quantity = form.quantity.value;
+        const Descriptions = form.description.value;
         const category = form.subCategory.value;
         
         const Details ={
-            PName,
-            Pphoto,
-            SellerName,
+            Product_name,
+            Product_picture,
+            Seller,
             SellerEmail,
-            Pprice,
-            Pratings,
-            PQuantity,
-            Pdescription,
+            Product_price,
+            ratings,
+            Product_quantity,
+            Descriptions,
             category
         }
         console.log(Details)
@@ -64,9 +64,9 @@ const AddToy = () => {
                 <div>
                     <label htmlFor="subCategory" className="block text-gray-700 font-medium mb-1">Sub-category</label>
                     <select id="subCategory" name="subCategory" className="w-full bg-gray-100 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500">
-                        <option value="Math Toys">Math Toys</option>
-                        <option value="Language Toys">Language Toys</option>
-                        <option value="Science Toys">Science Toys</option>
+                        <option value="Playing Elephent">Playing Elephent</option>
+                        <option value="Flaying Elephent">Flaying Elephent</option>
+                        <option value="Singing Elephent">Singing Elephent</option>
                     </select>
                 </div>
                 <div>
