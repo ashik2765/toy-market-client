@@ -64,9 +64,9 @@ const AddToy = () => {
                 <div>
                     <label htmlFor="subCategory" className="block text-gray-700 font-medium mb-1">Sub-category</label>
                     <select id="subCategory" name="subCategory" className="w-full bg-gray-100 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500">
-                        <option value="Playing Elephent">Playing Elephent</option>
-                        <option value="Flaying Elephent">Flaying Elephent</option>
-                        <option value="Singing Elephent">Singing Elephent</option>
+                        <option value="C11">Playing Elephent</option>
+                        <option value="C12">Flaying Elephent</option>
+                        <option value="C13">Singing Elephent</option>
                     </select>
                 </div>
                 <div>
