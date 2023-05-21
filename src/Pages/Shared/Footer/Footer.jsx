@@ -5,10 +5,13 @@ const Footer = () => {
         <footer className="footer p-10 bg-neutral text-neutral-content">
             <div>
                 <img className='h-32 w-32 rounded-full' src={logo} alt="" />
-                <p>ACME Industries Ltd.<br />Providing reliable tech since 1992</p>
+                <p><span className="inline-block bg-blue-500 text-white text-xl font-bold py-2 px-4 rounded-lg shadow-lg">
+                Imaginatoys
+                </span>
+                </p>
             </div>
             <div>
-                
+
             </div>
             <div>
                 <span className="footer-title">Social</span>

@@ -5,7 +5,7 @@ import { AuthContext } from '../../../Provider/AuthProvider';
 
 const NavBar = () => {
     const { user, logOut } = useContext(AuthContext);
-    
+
 
     const handleLogOut = () => {
         logOut()
@@ -40,7 +40,10 @@ const NavBar = () => {
                         </ul>
                     </div>
                     <img className='h-20 w-20 rounded-full' src={logo} alt="" />
-                    <span className="btn btn-ghost normal-case text-xl">daisyUI</span>
+                    <span className="hidden md:inline-block bg-blue-500 text-white text-xl font-bold py-2 px-4 rounded-lg shadow-lg">
+                        Imaginatoys
+                    </span>
+
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
