@@ -49,7 +49,6 @@ const AllToy = () => {
             <th>Sub-category</th>
             <th>Price & Available Quantity</th>
             <th>View Details</th>
-            <th>View Details</th>
 
           </tr>
         </thead>

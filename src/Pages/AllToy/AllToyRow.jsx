@@ -2,10 +2,6 @@ import { Link } from "react-router-dom";
 
 
 const AllToyRow = ({toy}) => {
-    console.log(toy)
-    const handleDetails =()=>{
-      console.log('connected')
-    }
 
     const {
       _id,
@@ -39,10 +35,7 @@ const AllToyRow = ({toy}) => {
               <span className="badge badge-ghost badge-sm">Quantity: {Product_quantity}</span>
             </td>
             <td>
-              <Link to={`/details/${_id}`}><button onClick={handleDetails} className="btn btn-active btn-ghost ">details</button></Link>
-            </td>
-            <td>
-              <Link to={`/details/${_id}`}><button onClick={handleDetails} className="btn btn-active btn-ghost ">Delete</button></Link>
+              <Link to={`/details/${_id}`}><button  className="btn btn-active btn-ghost ">details</button></Link>
             </td>
           </tr>
     );

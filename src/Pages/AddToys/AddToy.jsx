@@ -1,6 +1,10 @@
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
+import Swal from "sweetalert2";
 
 
 const AddToy = () => {
+    const {user} = useContext(AuthContext);
     const handleAddedToy = (event)=>{
         event.preventDefault()
 
@@ -38,6 +42,14 @@ const AddToy = () => {
         .then(res => res.json())
         .then(result =>{
             console.log(result)
+            if(result.insertedId){
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Done',
+                    text: 'Done!',
+                    footer: '<a href="">Why do I have this issue?</a>'
+                  })
+            }
         })
 
     }
@@ -59,7 +71,7 @@ const AddToy = () => {
                 </div>
                 <div>
                     <label htmlFor="sellerEmail" className="block text-gray-700 font-medium mb-1">Seller Email</label>
-                    <input type="email" id="sellerEmail" name="sellerEmail" className="w-full bg-gray-100 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500" />
+                    <input type="email" id="sellerEmail" name="sellerEmail" defaultValue={user.email} className="w-full bg-gray-100 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500" />
                 </div>
                 <div>
                     <label htmlFor="subCategory" className="block text-gray-700 font-medium mb-1">Sub-category</label>

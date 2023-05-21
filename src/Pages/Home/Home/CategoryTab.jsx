@@ -9,7 +9,7 @@ const CategoryTab = () => {
     const [activeTab, setActiveTab] = useState("C11");
 
     useEffect(() => {
-        fetch(`http://localhost:5000/toy/${activeTab}`)
+        fetch(`https://toy-shop-server.vercel.app/toy/${activeTab}`)
             .then(res => res.json())
             .then(result => {
                 setToys(result)
@@ -18,7 +18,7 @@ const CategoryTab = () => {
     const handleSort = (tab) => {
         setActiveTab(tab);
     }
-    console.log(toys)
+    
 
 
     return (

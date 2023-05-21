@@ -9,7 +9,7 @@ import AddToy from "../Pages/AddToys/AddToy";
 import ViewDetails from "../Pages/ViewDetails/ViewDetails";
 import MyToys from "../Pages/MyToy/MyToys";
 import PrivateRoute from "./PrivateRoute";
-// import UpdateMytoy from "../Pages/MyToy/UpdateMytoy";
+import UpdateMytoy from "../Pages/MyToy/UpdateMytoy";
 
 
 const router = createBrowserRouter([
@@ -45,13 +45,12 @@ const router = createBrowserRouter([
           path:'mytoy',
           element:<MyToys></MyToys>
         },
-               //update route
-        // {
-        //   path:'update/:id',
-        //   element:<UpdateMytoy></UpdateMytoy>,
-        //   loader:({params})=> fetch(`url/${params.id}`)
+        {
+          path:'update/:id',
+          element:<UpdateMytoy></UpdateMytoy>,
+          loader:({params})=> fetch(`https://toy-shop-server.vercel.app/updateToy/${params.id}`)
 
-        // },
+        },
         {
           path:'/details/:id',
           element:<PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
