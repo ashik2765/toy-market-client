@@ -23,6 +23,7 @@ const UpdateMytoy = () => {
     const description = form.Pdescription.value;
 
     const updatedToy = { price, quantity, description }
+    console.log(updatedToy)
 
     fetch(`https://toy-shop-server.vercel.app/updateToy/${_id}`, {
       method: 'PUT',
