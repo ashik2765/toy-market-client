@@ -18,12 +18,14 @@ const CategoryTab = () => {
     const handleSort = (tab) => {
         setActiveTab(tab);
     }
-    
+
 
 
     return (
         <div>
-            <h2 className='text-4xl text-purple-600 font-bold text-center py-20'>Shop By category</h2>
+            <h2 className="text-4xl text-purple-600 font-bold text-center py-20 bg-gradient-to-r from-purple-500 to-indigo-500 text-white px-6 rounded-lg shadow-lg">
+                Shop By category
+            </h2>
             <Tabs className="px-4">
                 <TabList>
 
