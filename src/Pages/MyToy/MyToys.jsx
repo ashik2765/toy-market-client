@@ -17,9 +17,27 @@ const MyToys = () => {
     }, [user])
 
 
-    const handleDetails = () => {
-        console.log('connected')
+           //update method
+           
+    // const handleUpdate = () => {
+    //     console.log('update')
+    // }
+
+
+         // Delete method
+    const handleDelete =(_id)=>{
+
+
+       
+        fetch(`http://localhost:5000/toys/${_id}`,{
+            method:"DELETE"
+        })
+        .then(res => res.json())
+        .then(data =>{
+            console.log(data)
+        })
     }
+
     return (
         <div className="overflow-x-auto w-full">
 
@@ -63,10 +81,11 @@ const MyToys = () => {
                                 <span className="badge badge-ghost badge-sm">Quantity: {mytoy.Product_quantity}</span>
                             </td>
                             <td>
-                                <Link to={`/details/${mytoy._id}`}><button onClick={handleDetails} className="btn btn-active btn-ghost ">details</button></Link>
+                                <Link to={`/details/${mytoy._id}`}><button  className="btn btn-active btn-ghost ">Update</button></Link>
                             </td>
                             <td>
-                                <Link to={`/details/${mytoy._id}`}><button onClick={handleDetails} className="btn btn-active btn-ghost ">Delete</button></Link>
+                                 
+                                <Link><button onClick={()=>handleDelete(mytoy._id)} className="btn btn-active btn-ghost ">Delete</button></Link>
                             </td>
                         </tr>)
                     }

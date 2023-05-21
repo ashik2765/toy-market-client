@@ -6,7 +6,7 @@ import TabDisplay from './TabDisplay';
 
 const CategoryTab = () => {
     const [toys, setToys] = useState([]);
-    const [activeTab, setActiveTab] = useState("ajhsk");
+    const [activeTab, setActiveTab] = useState("C11");
 
     useEffect(() => {
         fetch(`http://localhost:5000/toy/${activeTab}`)
@@ -23,7 +23,7 @@ const CategoryTab = () => {
 
     return (
         <div>
-            <h2 className='text-4xl text-purple-600 font-bold text-center py-20'>Categories</h2>
+            <h2 className='text-4xl text-purple-600 font-bold text-center py-20'>Shop By category</h2>
             <Tabs className="px-4">
                 <TabList>
 
